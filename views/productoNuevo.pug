@@ -1,0 +1,19 @@
+html
+    head
+        title='plantilla pug'
+        style
+            include styles.css
+    body
+        h1=tittle
+        br
+        br
+        div
+            div
+                p=productoNuevo.id
+                p=productoNuevo.title
+                p=productoNuevo.price
+                img(class='product-img', src=productoNuevo.thumbnail)
+        
+        br
+        br
+        a(href="http://localhost:8080/products" class="btn") Volver a la lista de productos

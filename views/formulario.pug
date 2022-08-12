@@ -1,0 +1,17 @@
+html
+    head
+        title='plantilla pug'
+        style
+            include styles.css
+    body
+        h1=titulo
+          form(method="post" action="/form" id="form")
+            input(type="text" name="title")
+            input(type="text" name="price")
+            input(type="text" name="thumbnail")
+            input(type="submit" value="Cargar")
+            
+    br
+    br
+    br
+    a(href="http://localhost:8080/products" class="btn") Volver a la lista de productos
